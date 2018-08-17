@@ -1,0 +1,58 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "array",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "items": {
+    "$id": "http://example.com/example.json/items",
+    "type": "object",
+    "properties": {
+      "codigoSecao": {
+        "$id": "http://example.com/example.json/items/properties/codigoSecao",
+        "type": "string",
+        "title": "The Codigosecao Schema ",
+        "default": "",
+        "examples": [
+          "QkVCSURBUyBFU1BFQ0lBSVM="
+        ]
+      },
+      "descricao": {
+        "$id": "http://example.com/example.json/items/properties/descricao",
+        "type": "string",
+        "title": "The Descricao Schema ",
+        "default": "",
+        "examples": [
+          "BEBIDAS ESPECIAIS"
+        ]
+      },
+      "ordem": {
+        "$id": "http://example.com/example.json/items/properties/ordem",
+        "type": "integer",
+        "title": "The Ordem Schema ",
+        "default": 0,
+        "examples": [
+          18
+        ]
+      },
+      "quantidade": {
+        "$id": "http://example.com/example.json/items/properties/quantidade",
+        "type": "integer",
+        "title": "The Quantidade Schema ",
+        "default": 0,
+        "examples": [
+          7
+        ]
+      },
+      "cardapioDigitalEstabelecimentoSecaoProdutos": {
+        "$id": "http://example.com/example.json/items/properties/cardapioDigitalEstabelecimentoSecaoProdutos",
+        "type": "null",
+        "title": "The Cardapiodigitalestabelecimentosecaoprodutos Schema ",
+        "default": null,
+        "examples": [
+          null
+        ]
+      }
+    }
+  }
+}
+

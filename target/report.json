@@ -1,0 +1,331 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1315089920,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InicializeTest()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Consultar seção de cardápios",
+        "description": "",
+        "id": "consultar-cardápios-e-seus-produtos-relacionados.;consultar-seção-de-cardápios",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 225257814,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que eu possua o cnpj do estabelecimento",
+            "match": {
+              "location": "CardapioSteps.que_eu_possua_o_cnpj_do_estabelecimento()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2115025920,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "eu realizar a requisição no endpoint",
+            "match": {
+              "location": "CardapioSteps.eu_realizar_a_requisição_no_endpoint()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1278121387,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "a api me retorna as seções de cardápios",
+            "match": {
+              "location": "CardapioSteps.a_api_me_retorna_as_seções_de_cardápios()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 10628267,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "o content-type \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "application/json",
+                  "offset": 16
+                }
+              ],
+              "location": "GenericosSteps.oContentType(String)"
+            },
+            "keyword": "E "
+          }
+        ]
+      }
+    ],
+    "name": "Consultar cardápios e seus produtos relacionados.",
+    "description": "",
+    "id": "consultar-cardápios-e-seus-produtos-relacionados.",
+    "keyword": "Funcionalidade",
+    "uri": "cardapio.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3811414,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InicializeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Realizar requisição na API com dados de requisição válidos",
+        "description": "",
+        "id": "gerar-qrcode;realizar-requisição-na-api-com-dados-de-requisição-válidos",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 367786,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que eu informe os dados da requisição",
+            "match": {
+              "location": "QrcodeSteps.que_eu_informe_os_dados_da_requisição()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 679670614,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "realizar a requisição no endpoint",
+            "match": {
+              "location": "QrcodeSteps.realizar_a_requisição_no_endpoint()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 750117546,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "a api me retorna código 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "QrcodeSteps.a_api_me_retorna_código(int)"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 1473706,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "o content-type \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "application/json",
+                  "offset": 16
+                }
+              ],
+              "location": "GenericosSteps.oContentType(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 19210240,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "o qrcode possui 134 caracteres",
+            "match": {
+              "arguments": [
+                {
+                  "val": "134",
+                  "offset": 16
+                }
+              ],
+              "location": "QrcodeSteps.o_qrcode_possui_caracteres(int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 17999787,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "o codigo da comanda possui 8 caracters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 27
+                }
+              ],
+              "location": "QrcodeSteps.o_codigo_da_comanda_possui_caracters(int)"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5989973,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InicializeTest()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Realizar requisição na API sem informar dados na requisição",
+        "description": "",
+        "id": "gerar-qrcode;realizar-requisição-na-api-sem-informar-dados-na-requisição",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 875700053,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "realizar a requisição no endpoint",
+            "match": {
+              "location": "QrcodeSteps.realizar_a_requisição_no_endpoint()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 13530026,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "a api me retorna código 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "QrcodeSteps.a_api_me_retorna_código(int)"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 874240,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "o content-type \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "application/json",
+                  "offset": 16
+                }
+              ],
+              "location": "GenericosSteps.oContentType(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 15508480,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "o qrcode possui 134 caracteres",
+            "match": {
+              "arguments": [
+                {
+                  "val": "134",
+                  "offset": 16
+                }
+              ],
+              "location": "QrcodeSteps.o_qrcode_possui_caracteres(int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 17051733,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "o codigo da comanda possui 8 caracters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 27
+                }
+              ],
+              "location": "QrcodeSteps.o_codigo_da_comanda_possui_caracters(int)"
+            },
+            "keyword": "E "
+          }
+        ]
+      }
+    ],
+    "name": "Gerar QRCode",
+    "description": "",
+    "id": "gerar-qrcode",
+    "keyword": "Funcionalidade",
+    "uri": "qrcode.feature"
+  }
+]
